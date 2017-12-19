@@ -5,8 +5,9 @@ namespace Themosis\View\Extensions;
 use Themosis\Foundation\Application;
 use Twig_SimpleFunction;
 use Twig_Extension;
+use Twig_Extension_GlobalsInterface;
 
-class ThemosisTwigExtension extends Twig_Extension
+class ThemosisTwigExtension extends Twig_Extension implements Twig_Extension_GlobalsInterface
 {
     /**
      * @var \Themosis\Foundation\Application
